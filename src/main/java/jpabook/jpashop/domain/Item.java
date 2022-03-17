@@ -2,12 +2,14 @@ package jpabook.jpashop.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Item {
     @Id
     @Column(name = "item_id", nullable = false)
+    @GeneratedValue
     private Long id;
 
     private String name;
